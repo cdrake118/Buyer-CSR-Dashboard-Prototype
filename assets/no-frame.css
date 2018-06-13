@@ -1,0 +1,38 @@
+/* Apply to render site frame fixed */
+.header{
+	position:fixed !important;
+	display:none !important;; 
+}
+
+.breadcrumb{
+	position:fixed !important;
+	display:none !important;
+}
+
+
+.sidebar1{
+	position: fixed !important;
+	display:none !important;
+}
+
+.cnav{
+	position: fixed !important;
+	display:none !important;
+}
+
+.togglemenu{
+	position: fixed !important;
+	display:none !important;
+}
+
+body{
+		border-top:none !important;
+}
+
+.content {
+	width: 100% !important;
+	float: left !important;
+	position:absolute !important;
+	left:0px !important;
+	z-index:0 !important;
+}

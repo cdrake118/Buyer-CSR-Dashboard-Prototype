@@ -1,0 +1,1934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Buyer Dashboard</title>
+<link href="../assets/bootstrap.css" rel="stylesheet">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<link rel="icon" href="assets/img/favicon.ico">	
+<!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } 
+ul.nav a { zoom: 1; }  
+</style>
+<![endif]--> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+     <script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<script type="text/javascript" src="../assets/js/stupidtable.min.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/flot/jquery.flot.min.js"></script>
+    	<script language="javascript" type="text/javascript" src="../assets/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="../assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="../assets/js/waypoints-sticky.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.activity-indicator-1.0.0.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../assets/js/excanvas.js"></script><![endif]-->
+
+
+<link rel="stylesheet" type="text/css" href="../assets/custom.css"/></head>
+
+<!-- Removes Outer Frame via CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/no-frame.css"/>
+
+
+
+
+<body>
+
+<div class="container2">
+<div class="header" style="float:left; width:100%; text-align:left;"><a href="#"><img src="../assets/img/invista-logo.gif" alt="Invista" name="Invista" width="287px" height="94px" id="invista-logo" style="display:inline;"/></a>
+    <div class="header-container" style="display: inline;">
+    <ul class="topnav">
+      <li><a href="javascript:loadjscssfile('no-frame.css', 'css')">Remove Frame</a></li>
+      <li><a href="#">Forward</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">View</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+    
+    
+    </div>
+    <div class="right-header">
+    <div id="search">
+    
+	<form class="sform"> 
+		<input type="text" required>
+		<input type="reset" value="x">
+	</form>	
+
+    </div>
+    
+    <div id="header-user" style="position:relative; float:left; margin-top:5px;"><div class="dropdown" style="position:relative !important; float:left;"><a href="#" data-toggle="dropdown">Welcome: <strong>Aditya Kothuri</strong>
+  <span class="glyphicon glyphicon-chevron-down"></span></a>
+  
+   <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1" style="z-index:9999;">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Profile</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Exceptions</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Order Details</a></li>
+    <li role="presentation" class="divider"></li>
+     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Order Details</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+  </ul>
+</div>
+  
+  </div>
+    </div>
+    <!-- end .header -->
+    
+  </div>
+    
+    <div class="cnav" id="mylist">
+    <ul>
+    <li>Invista<br />Dashboard</li>
+     <li>Invista<br />Dashboard</li>
+      <li>Invista<br />Dashboard</li>
+       <li>Invista<br />Dashboard</li>
+        <li>Invista<br />Dashboard</li>
+         <li>Invista<br />Dashboard</li>
+    </ul>
+    </div>
+    
+  
+        <div class="breadcrumb">Invista Dashboard > Order Tracking > Order Overview</div>
+
+  <div class="sidebar1">
+    <div class="togglenav" style="float:left;">
+    <ul class="nav" style="padding-top:15px; float:left; height:auto;">
+      <li><a href="#">Nav Menu Label #1</a></li>
+      <li style="margin-left:40px; font-size:14px; ">
+      <ul>
+      	<li style="padding-bottom:4px;">Subitem Designation A</li>
+      	<li style="padding-bottom:4px;">Subitem Designation B</li>
+      	<li style="padding-bottom:4px;">Subitem Designation C</li>
+      	<li style="padding-bottom:4px;">Subitem Designation D</li>
+      	<li style="padding-bottom:4px;">Subitem Designation E</li>
+      	<li style="padding-bottom:4px;">Subitem Designation F</li>
+      </ul>
+      </li>
+      <li><a href="#">Nav Menu Label #2</a></li>
+      <li><a href="#">Nav Menu Label #3</a></li>
+      <li><a href="#">Nav Menu Label #4</a></li>
+      <li><a href="#">Nav Menu Label #4</a></li>
+      <li><a href="#">Nav Menu Label #4</a></li>
+      <li><a href="#">Nav Menu Label #4</a></li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+	<div class="togglemenu" id="togglemenu" ><span class="glyphicon glyphicon-chevron-left"></span></div></div>
+   <div class="content"> <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none !important;
+    }
+  </style>
+<![endif]-->
+       <div class="col-lg-12">
+          <h1>Key Metrics: <strong>Purchasing Group's Name</strong><div class="dropdown">
+  <button class="dropdown-toggle btn btn-success btn-md buyer-btn" style="float:right; position:relative; display:inline; margin-top:-25px;" type="button" id="dropdownMenu2" data-toggle="dropdown">
+    <span class="condensed-bold">SELECT PURCHASING GROUP</span>   
+  </button>
+  
+  <style>
+  #quad{
+	width:760px !important;
+	overflow:hidden;
+	
+}
+#quad li{
+	line-height:1.5em;
+	float:left;
+	display:inline;
+	border-right:2px solid #47a447;
+}
+#quad li		{ width:25%; }
+
+  </style>
+  <ul class="dropdown-menu pull-right" role="menu" id="quad" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group R</span></a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1"   href="#"><input type="checkbox"><span> Group B</a></span></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+         <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+         <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group F</a></span></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</a></span></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</a></span></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</a></span></li>
+         <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group C</span></a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><input type="checkbox"><span> Group D</span></a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1"  href="#"><input type="checkbox"><span> Group E</span></a></li>
+  </ul>
+</div></h1>
+          <div style="margin-bottom:30px;">
+          <div class="key-metrics">
+      
+<table>
+<tr>
+<td style="border-bottom:#f7c895 4px solid; text-align:center;" class="tpending-release">PO Pending Release<p>16</p></td>
+<td style="border-bottom:#f7c895 4px solid; text-align:center;" class="ters">ERS Errors<p>12</p></td>
+<td style="border-bottom:#f7c895 4px solid; text-align:center;" class="topenpastdue">Open or Past Due PO<p>16</p></td>
+<td style="border-bottom:#f7c895 4px solid; text-align:center;" class="tnoir">No Invoice Receipt<p>16</p></td>
+<td style="border-bottom:#f7c895 4px solid; text-align:center;" class="toutputfailures">Output Failures<p>24</p></td>
+<td style="border-bottom:#f7c895 4px solid; text-align:center;" class="tnooa" onclick="">No Order Ack<p>12</p></td>
+
+<td style="border-bottom:#edadcc 4px solid; text-align:center;" class="tpr-pending-release">PR Pending Release<p>10</p></td>
+<td style="border-bottom:#edadcc 4px solid; text-align:center;" class="tpropobatch">PR/PO Batch Failures <p>7</p></td>
+<td style="border-bottom:#aee5e3 4px solid; text-align:center;">POR<p>16</p></td>
+
+ 
+  <td style="border-bottom:#aee5e3 4px solid; text-align:center;">VIM Errors<p>20</p></td>
+  <td style="border-bottom:#bcbcff 4px solid; text-align:center;">Open RFQ's<p>6</p></td>
+
+</tr>
+</table>
+           </div>
+        </div>
+       </div>
+       
+         <div class="col-lg-6">
+          <h1 >Purchase Orders: <span id="po-status">Pending Release</span><span id="busy-po" style="position:relative; margin-left:50px;"></span><div class="dropdown">
+  <button class="dropdown-toggle btn btn-success btn-md buyer-btn" style="float:right; position:relative; display:inline; margin-top:-25px;" type="button" id="dropdownMenu2" data-toggle="dropdown">
+    <span class="condensed-bold">FILTER</span>   
+  </button>
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" class="tpending-release"href="#">Pending Release</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" class="ters"  href="#">ERS Errors</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" class="topenpastdue" href="#">Open or Past due</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" class="tnoir" href="#">No Invoice Receipt</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="toutputfailures" href="#">Output Failures</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="tnooa" href="#">No Order Ack</a></li>
+
+
+  </ul>
+</div></h1>
+          <div class="overflow all-exceptions" style="margin-bottom:35px;">
+          
+           <table class="table table-striped tablesorter hoverable table-hide  pending-release"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Value</th>
+        <th data-sort="string">Creation</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003211111</td>
+      <td >23222 / Acme Inc</td>
+      <td >$15,000</td>
+      <td >10/20/2013</td>
+    <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >0003211112</td>
+      <td >14447 / Comp Name</td>
+      <td >$11,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Drake Corp</td>
+      <td >$20,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >$13,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td >23222 / Big Red</td>
+      <td >$5,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+            </tr>
+    <tr>
+      <td >0003211112</td>
+      <td >14447 / Widget Co</td>
+      <td >$800</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Carbo Inc</td>
+      <td >$58,293</td>
+      <td >10/20/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >23222 / Solo Wook</td>
+      <td >$1,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+          </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >14447 / Jawa Pal</td>
+      <td >$8,987</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Tusken Co</td>
+      <td >$20,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+       <tr>
+      <td >1002121100</td>
+      <td >75885 / Mando Inc</td>
+      <td >$13,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+       </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Alderan Bros</td>
+      <td >$5,000</td>
+      <td >10/22/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Palp Prod</td>
+      <td  >$800</td>
+      <td  >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Lando Cal</td>
+      <td >$58,293</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Millenium</td>
+      <td >$1,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Force Pros</td>
+      <td  >$8,987</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+        </tr>
+    </tbody> 
+           </table>
+           <table class="table table-striped tablesorter hoverable table-hide openpastdue"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Item</th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Plant</th>
+        <th data-sort="int">Material</th>
+        <th data-sort="int">Ordered / Open</th>
+        <th data-sort="int">Delivery</th>
+        <th data-sort="int">Flag</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003111</td>
+      <td >10</td>
+      <td >23222 / Acme Inc</td>
+      <td >Atlanta</td>
+      <td >871 / Descrption</td>
+      <td >10,000 / 10,000</td>
+      <td >10/20/2013</td>
+      <td >A</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+    <tr >
+      <td >0001124</td>
+      <td >10</td>
+      <td >14447 / Comp Name</td>
+      <td >Beijing</td>
+      <td >362 / Descrption</td>
+      <td >10,000 / 8,000</td>
+      <td >10/21/2013</td>
+      <td >B</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1001100</td>
+      <td >10</td>
+      <td >75885 / Drake Corp</td>
+      <td >Seattle</td>
+      <td >852 / Descrption</td>
+      <td >10,000 / 7,000</td>
+      <td >10/21/2013</td>
+      <td >B</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >1211111</td>
+      <td >20</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >Berlin</td>
+      <td >145 / Descrption</td>
+      <td >10,000 / 10,000</td>
+      <td >10/20/2013</td>
+      <td >B</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+          </tr>
+               <tr>
+      <td >3211111</td>
+      <td  >20</td>
+      <td >23222 / Big Red</td>
+      <td >Atlanta</td>
+      <td >987 / Descrption</td>
+      <td >20,000 / 15,000</td>
+      <td >10/21/2013</td>
+      <td >B</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+               </tr>
+    <tr >
+      <td >3211112</td>
+      <td >30</td>
+      <td >14447 / Widget Co</td>
+      <td >Nashville</td>
+      <td >951 / Descrption</td>
+      <td >25,000 / 25,000</td>
+      <td >10/21/2013</td>
+      <td >B</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1121100</td>
+      <td >10</td>
+      <td >75885 / Carbo Inc</td>
+      <td >Atlanta</td>
+      <td  >753 / Descrption</td>
+      <td  >500 / 0</td>
+      <td >10/20/2013</td>
+      <td >C</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003111</td>
+      <td >20</td>
+      <td >23222 / Solo Wook</td>
+      <td >Beijing</td>
+      <td >179 / Descrption</td>
+      <td >600 / 580</td>
+      <td >10/21/2013</td>
+      <td >C</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+          </tr>
+    <tr >
+      <td >0001112</td>
+      <td >10</td>
+      <td >14447 / Jawa Pal</td>
+      <td >Atlanta</td>
+      <td >871 / Descrption</td>
+      <td >400 / 400</td>
+      <td >10/21/2013</td>
+      <td >C</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1001100</td>
+      <td >10</td>
+      <td >75885 / Tusken Co</td>
+      <td >Beijing</td>
+      <td >362 / Descrption</td>
+      <td >10,000 / 10,000</td>
+      <td >10/20/2013</td>
+      <td >D</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+       <tr>
+      <td >1021100</td>
+      <td >10</td>
+      <td >75885 / Mando Inc</td>
+      <td >Seattle</td>
+      <td >852 / Descrption</td>
+      <td >10,000 / 8,000</td>
+      <td >10/21/2013</td>
+      <td >D</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+       </tr>
+        <tr>
+      <td >1002100</td>
+      <td >20</td>
+      <td >75885 / Alderan Bros</td>
+      <td >Berlin</td>
+      <td >145 / Descrption</td>
+      <td >10,000 / 7,000</td>
+      <td >10/21/2013</td>
+      <td >D</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1001100</td>
+      <td  >20</td>
+      <td >75885 / Palp Prod</td>
+      <td >Atlanta</td>
+      <td >987 / Descrption</td>
+      <td >10,000 / 10,000</td>
+      <td >10/20/2013</td>
+      <td >E</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1002100</td>
+      <td >30</td>
+      <td >75885 / Lando Cal</td>
+      <td >Nashville</td>
+      <td >951 / Descrption</td>
+      <td >20,000 / 15,000</td>
+      <td >10/21/2013</td>
+      <td >E</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1021100</td>
+      <td >10</td>
+      <td >75885 / Millenium</td>
+      <td >Atlanta</td>
+      <td  >753 / Descrption</td>
+      <td >25,000 / 25,000</td>
+      <td >10/21/2013</td>
+      <td >E</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1021100</td>
+      <td >20</td>
+      <td >75885 / Force Pros</td>
+      <td >Beijing</td>
+      <td >179 / Descrption</td>
+      <td  >500 / 0</td>
+      <td >10/21/2013</td>
+      <td >E</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+        </tr>
+    </tbody> 
+           </table>
+            <table class="table table-striped tablesorter hoverable table-hide  nooa"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Item</th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Plant</th>
+        <th data-sort="int">Material</th>
+        <th data-sort="int">Creation</th>
+        <th data-sort="int">Delivery</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003111</td>
+      <td >10</td>
+      <td >23222 / Acme Inc</td>
+      <td >Atlanta</td>
+      <td >871 / Descrption</td>
+      <td >10/20/2013</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+    <tr >
+      <td >0001124</td>
+      <td >10</td>
+      <td >14447 / Comp Name</td>
+      <td >Beijing</td>
+      <td >362 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1001100</td>
+      <td >10</td>
+      <td >75885 / Drake Corp</td>
+      <td >Seattle</td>
+      <td >852 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >1211111</td>
+      <td >20</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >Berlin</td>
+      <td >145 / Descrption</td>
+      <td >10/20/2013</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+          </tr>
+               <tr>
+      <td >3211111</td>
+      <td  >20</td>
+      <td >23222 / Big Red</td>
+      <td >Atlanta</td>
+      <td >987 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+               </tr>
+    <tr >
+      <td >3211112</td>
+      <td >30</td>
+      <td >14447 / Widget Co</td>
+      <td >Nashville</td>
+      <td >951 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1121100</td>
+      <td >10</td>
+      <td >75885 / Carbo Inc</td>
+      <td >Atlanta</td>
+      <td  >753 / Descrption</td>
+      <td >10/20/2013</td>
+      <td >10/20/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003111</td>
+      <td >20</td>
+      <td >23222 / Solo Wook</td>
+      <td >Beijing</td>
+      <td >179 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+          </tr>
+    <tr >
+      <td >0001112</td>
+      <td >10</td>
+      <td >14447 / Jawa Pal</td>
+      <td >Atlanta</td>
+      <td >871 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1001100</td>
+      <td >10</td>
+      <td >75885 / Tusken Co</td>
+      <td >Beijing</td>
+      <td >362 / Descrption</td>
+      <td >10/20/2013</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+       <tr>
+      <td >1021100</td>
+      <td >10</td>
+      <td >75885 / Mando Inc</td>
+      <td >Seattle</td>
+      <td >852 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+       </tr>
+        <tr>
+      <td >1002100</td>
+      <td >20</td>
+      <td >75885 / Alderan Bros</td>
+      <td >Berlin</td>
+      <td >145 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1001100</td>
+      <td  >20</td>
+      <td >75885 / Palp Prod</td>
+      <td >Atlanta</td>
+      <td >987 / Descrption</td>
+      <td >10/20/2013</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1002100</td>
+      <td >30</td>
+      <td >75885 / Lando Cal</td>
+      <td >Nashville</td>
+      <td >951 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1021100</td>
+      <td >10</td>
+      <td >75885 / Millenium</td>
+      <td >Atlanta</td>
+      <td  >753 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1021100</td>
+      <td >20</td>
+      <td >75885 / Force Pros</td>
+      <td >Beijing</td>
+      <td >179 / Descrption</td>
+      <td >10/21/2013</td>
+      <td >10/21/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+        </tr>
+    </tbody> 
+           </table>
+            <table class="table table-striped tablesorter hoverable table-hide"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Value</th>
+        <th data-sort="string">Creation</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003211111</td>
+      <td >23222 / Acme Inc</td>
+      <td >$15,000</td>
+      <td >10/20/2013</td>
+    <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+      </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >14447 / Comp Name</td>
+      <td >$11,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Drake Corp</td>
+      <td >$20,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >$13,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td >23222 / Big Red</td>
+      <td >$5,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+            </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >14447 / Widget Co</td>
+      <td >$800</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Carbo Inc</td>
+      <td >$58,293</td>
+      <td >10/20/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >23222 / Solo Wook</td>
+      <td >$1,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+          </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >14447 / Jawa Pal</td>
+      <td >$8,987</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Tusken Co</td>
+      <td >$20,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+       <tr>
+      <td >1002121100</td>
+      <td >75885 / Mando Inc</td>
+      <td >$13,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+       </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Alderan Bros</td>
+      <td >$5,000</td>
+      <td >10/22/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Palp Prod</td>
+      <td  >$800</td>
+      <td  >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Lando Cal</td>
+      <td >$58,293</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Millenium</td>
+      <td >$1,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >75885 / Force Pros</td>
+      <td  >$8,987</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+        </tr>
+    </tbody> 
+           </table>
+           <table class="table table-striped tablesorter hoverable table-hide  noir"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Ordered</th>
+        <th data-sort="string">Delivered</th>
+        <th data-sort="int">Last GR</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003211111</td>
+      <td >75885 / Palp Prod</td>
+      <td >10,000</td>
+      <td >10,000</td>
+      <td >10/23/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >75885 / Lando Cal</td>
+      <td >10,000</td>
+      <td >10,000</td>
+      <td >10/23/2013</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Millenium</td>
+      <td >20,000</td>
+      <td >20,000</td>
+      <td >10/23/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >75885 / Force Pros</td>
+      <td >20,000</td>
+      <td >20,000</td>
+      <td >10/24/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td  >75885 / Alderan Bros</td>
+      <td >20,000</td>
+      <td >20,000</td>
+      <td >11/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+               </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >75885 / Tusken Co</td>
+      <td >30,000</td>
+      <td >30,000</td>
+      <td >11/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Mando Inc</td>
+      <td >30,000</td>
+      <td >30,000</td>
+      <td  >11/20/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >23222 / Solo Wook</td>
+      <td  >40,000</td>
+      <td >40,000</td>
+      <td >11/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+          </tr>
+    <tr>
+      <td >0003211111</td>
+      <td >75885 / Palp Prod</td>
+      <td >10,000</td>
+      <td >10,000</td>
+      <td >10/23/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >75885 / Lando Cal</td>
+      <td >10,000</td>
+      <td >10,000</td>
+      <td >10/23/2013</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Millenium</td>
+      <td >20,000</td>
+      <td >20,000</td>
+      <td >10/23/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >75885 / Force Pros</td>
+      <td >20,000</td>
+      <td >20,000</td>
+      <td >10/24/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td  >75885 / Alderan Bros</td>
+      <td >20,000</td>
+      <td >20,000</td>
+      <td >11/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+               </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >75885 / Tusken Co</td>
+      <td >30,000</td>
+      <td >30,000</td>
+      <td >11/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >75885 / Mando Inc</td>
+      <td >30,000</td>
+      <td >30,000</td>
+      <td  >11/20/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >23222 / Solo Wook</td>
+      <td  >40,000</td>
+      <td >40,000</td>
+      <td >11/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+          </tr>
+    </tbody> 
+           </table>
+            <table class="table table-striped tablesorter hoverable table-hide  poresponse"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Delivery</th>
+        <th data-sort="string">Status</th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Value</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003211111</td>
+      <td >11/20/2013</td>
+      <td ><div id="yellow" class="circle"></div>
+        Parked</td>
+      <td >23222 / Acme Inc</td>
+      <td >$15,000</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >0003211112</td>
+      <td >12/20/2013</td>
+      <td ><div id="red" class="circle"></div>
+        Blocked</td>
+      <td >14447 / Comp Name</td>
+      <td >$11,000</td>
+      <td ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >11/20/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Drake Corp</td>
+      <td >$20,000</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >11/20/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >$13,000</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td  >10/21/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >23222 / Big Red</td>
+      <td >$5,000</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+               </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >10/22/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >14447 / Widget Co</td>
+      <td >$800</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >10/20/2013</td>
+      <td ><div id="yellow" class="circle"></div>
+        Parked</td>
+      <td >75885 / Carbo Inc</td>
+      <td >$58,293</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >10/20/2013</td>
+      <td  ><div id="red" class="circle"></div>
+        Blocked</td>
+      <td >23222 / Solo Wook</td>
+      <td >$1,000</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+          </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >10/20/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >14447 / Jawa Pal</td>
+      <td >$8,987</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >9/20/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Tusken Co</td>
+      <td >$20,000</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+      </tr>
+       <tr>
+      <td >1002121100</td>
+      <td  >10/21/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Mando Inc</td>
+      <td >$13,000</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+       </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >10/22/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Alderan Bros</td>
+      <td >$5,000</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td  >8/20/2013</td>
+      <td  ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Palp Prod</td>
+      <td  >$800</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >10/20/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Lando Cal</td>
+      <td >$58,293</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td  >10/21/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Millenium</td>
+      <td >$1,000</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+      </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >10/22/2013</td>
+      <td ><div id="green" class="circle"></div>
+        Open</td>
+      <td >75885 / Force Pros</td>
+      <td  >$8,987</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+      </td>
+        </tr>
+    </tbody> 
+           </table>
+                   <table class="table table-striped tablesorter hoverable table-hide  ers"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Line Item</th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Plant</th>
+        <th data-sort="string">Job Start</th>
+        <th data-sort="int">Message Text</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003211111</td>
+      <td >10</td>
+      <td >23222 / Acme Inc</td>
+      <td >Atlanta</td>
+      <td >8/20/2013</td>
+      <td ><div style="display:none;">1</div>
+        Message</td>
+      </tr>
+    <tr>
+      <td >0003211112</td>
+      <td >30</td>
+      <td >14447 / Comp Name</td>
+      <td >Chicago</td>
+      <td >8/21/2013</td>
+      <td ><div style="display:none;">3</div>
+        Message</td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >20</td>
+      <td >75885 / Drake Corp</td>
+      <td >Chicago</td>
+      <td >8/21/2013</td>
+      <td ><div style="display:none;">1</div>
+Message</td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >20</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >Chicago</td>
+      <td >9/1/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td  >20</td>
+      <td >23222 / Big Red</td>
+      <td >Houston</td>
+      <td >9/1/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+               </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >30</td>
+      <td >14447 / Widget Co</td>
+      <td >Dallas</td>
+      <td >9/5/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >40</td>
+      <td >75885 / Carbo Inc</td>
+      <td >Anderson</td>
+      <td >9/9/2013</td>
+      <td ><div style="display:none;">3</div>
+Message</td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >30</td>
+      <td >23222 / Solo Wook</td>
+      <td >Houston</td>
+      <td >10/1/2013</td>
+      <td ><div style="display:none;">1</div>
+Message</td>
+          </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >50</td>
+      <td >14447 / Jawa Pal</td>
+      <td >Anderson</td>
+      <td >10/1/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >20</td>
+      <td >75885 / Tusken Co</td>
+      <td >Houston</td>
+      <td >11/5/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+      </tr>
+       <tr>
+      <td >1002121100</td>
+      <td  >20</td>
+      <td >75885 / Mando Inc</td>
+      <td >Dallas</td>
+      <td >12/17/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+       </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >10</td>
+      <td >75885 / Alderan Bros</td>
+      <td >Dallas</td>
+      <td >12/1/2013</td>
+      <td  ><div style="display:none;">3</div>
+Message</td>
+        </tr>
+      
+    </tbody> 
+           </table>
+            <table class="table table-striped tablesorter hoverable table-hide  outputfailures"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#f7c895 4px solid">
+      <tr >
+       <th data-sort="int" >PO # </th>
+        <th data-sort="string">Creation</th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Message Type</th>
+        <th data-sort="string">Created</th>
+        <th data-sort="int">Message Text</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >0003211111</td>
+      <td >10/23/2013</td>
+      <td >23222 / Acme Inc</td>
+      <td >Type A</td>
+      <td >8/20/2013</td>
+      <td ><div style="display:none;">1</div>
+        Message</td>
+      </tr>
+    <tr>
+      <td >0003211112</td>
+      <td >10/23/2013</td>
+      <td >14447 / Comp Name</td>
+      <td >Type B</td>
+      <td >8/21/2013</td>
+      <td ><div style="display:none;">3</div>
+        Message</td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >10/23/2013</td>
+      <td >75885 / Drake Corp</td>
+      <td >Chicago</td>
+      <td >8/21/2013</td>
+      <td ><div style="display:none;">1</div>
+Message</td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >10/23/2013</td>
+      <td >23222 / Jeff Manuf</td>
+      <td >Type C</td>
+      <td >9/1/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+          </tr>
+               <tr>
+      <td >0003211111</td>
+      <td  >10/23/2013</td>
+      <td >23222 / Big Red</td>
+      <td >Type C</td>
+      <td >9/1/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+               </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >10/23/2013</td>
+      <td >14447 / Widget Co</td>
+      <td >Type C</td>
+      <td >9/5/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >10/23/2013</td>
+      <td >75885 / Carbo Inc</td>
+      <td >Type D</td>
+      <td >9/9/2013</td>
+      <td ><div style="display:none;">3</div>
+Message</td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >10/23/2013</td>
+      <td >23222 / Solo Wook</td>
+      <td >Type D</td>
+      <td >10/1/2013</td>
+      <td ><div style="display:none;">1</div>
+Message</td>
+          </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >10/23/2013</td>
+      <td >14447 / Jawa Pal</td>
+      <td >Type D</td>
+      <td >10/1/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >10/23/2013</td>
+      <td >75885 / Tusken Co</td>
+      <td >Type E</td>
+      <td >11/5/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+      </tr>
+       <tr>
+      <td >1002121100</td>
+      <td  >10/23/2013</td>
+      <td >75885 / Mando Inc</td>
+      <td >Type E</td>
+      <td >12/17/2013</td>
+      <td ><div style="display:none;">2</div>
+Message</td>
+       </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >10/23/2013</td>
+      <td >75885 / Alderan Bros</td>
+      <td >Type F</td>
+      <td >12/1/2013</td>
+      <td  ><div style="display:none;">3</div>
+Message</td>
+        </tr>
+      
+    </tbody> 
+           </table>
+           </div>
+        </div>
+        
+        <div class="col-lg-6">
+     
+          <h1><span>Purchase Requisitions: </span><span id="pr-status">Pending Release</span><span id="busy-pr" style="position:relative; margin-left:50px;"></span><div class="dropdown">
+  <button class="dropdown-toggle btn btn-success btn-md buyer-btn" style="float:right; position:relative; display:inline; margin-top:-25px;" type="button" id="dropdownMenu2" data-toggle="dropdown">
+<span class="condensed-bold">FILTER</span>   
+  </button>
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="tpr-pending-release">Pending Release</a></li>
+     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="tpropobatch">Batch Failures</a></li>
+  </ul>
+</div></h1>
+          <div class="overflow all-exceptions" style="margin-bottom:35px;">
+          <table class="table table-striped tablesorter hoverable pr-table-hide  pr-pending-release"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#edadcc 4px solid">
+      <tr >
+       <th data-sort="int" >PR # </th>
+       <th data-sort="int" >Item</th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Plant</th>
+        <th data-sort="string">Requisitioner</th>
+        <th data-sort="string">Value</th>
+        <th data-sort="string">Creation</th>
+        <th data-sort="int">!</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr>
+      <td >1002121100</td>
+      <td >AA</td>
+      <td >75885 / Carbo Inc</td>
+      <td >Atlanta</td>
+      <td >Req A</td>
+      <td >$58,293</td>
+      <td >10/20/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+      </tr>
+          <tr>
+      <td >0003211111</td>
+      <td >BB</td>
+      <td >23222 / Solo Wook</td>
+      <td >Atlanta</td>
+      <td >Req A</td>
+      <td >$1,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+          </tr>
+    <tr >
+      <td >0003211112</td>
+      <td >CC</td>
+      <td >14447 / Jawa Pal</td>
+      <td >Atlanta</td>
+      <td >Req A</td>
+      <td >$8,987</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+    <tr>
+      <td >1002121100</td>
+      <td >DD</td>
+      <td >75885 / Tusken Co</td>
+      <td >Seattle</td>
+      <td >Req A</td>
+      <td >$20,000</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+      </tr>
+       <tr>
+      <td >1002121100</td>
+      <td >EE</td>
+      <td >75885 / Mando Inc</td>
+      <td >Seattle</td>
+      <td >Req B</td>
+      <td >$13,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+       </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >FF</td>
+      <td >75885 / Alderan Bros</td>
+      <td >Beijing</td>
+      <td >Req B</td>
+      <td >$5,000</td>
+      <td >10/22/2013</td>
+      <td  ><div style="display:none;">3</div><div id="red" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >GG</td>
+      <td >75885 / Palp Prod</td>
+      <td  >Beijing</td>
+      <td  >Req B</td>
+      <td  >$800</td>
+      <td  >10/20/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >HH</td>
+      <td >75885 / Lando Cal</td>
+      <td >Chicago</td>
+      <td >Req C</td>
+      <td >$58,293</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >HH</td>
+      <td >75885 / Millenium</td>
+      <td >Chicago</td>
+      <td >Req C</td>
+      <td >$1,000</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div><div id="yellow" class="circle"></div>
+        </td>
+        </tr>
+        <tr>
+      <td >1002121100</td>
+      <td >HH</td>
+      <td >75885 / Force Pros</td>
+      <td  >Chicago</td>
+      <td  >Req C</td>
+      <td  >$8,987</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">1</div><div id="green" class="circle"></div>
+        </td>
+        </tr>
+    </tbody> 
+           </table>
+           <table class="table table-striped tablesorter hoverable pr-table-hide propobatch"  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important;">
+    <thead style="border-bottom:#edadcc 4px solid">
+      <tr >
+       <th data-sort="int" >PR # </th>
+        <th data-sort="string">Vendor</th>
+        <th data-sort="string">Plant</th>
+        <th data-sort="string">Req Item</th>
+        <th data-sort="string">Delivery</th>
+        <th data-sort="string">Error Message</th>
+        </tr>
+    </thead>
+    <tbody> 
+   
+    
+    <tr>
+      <td >0001112</td>
+      <td >14447 / Widget Co</td>
+      <td >Atlanta</td>
+      <td >10</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">2</div>
+        Error B</td>
+      </tr>
+    <tr>
+      <td >1001100</td>
+      <td >75885 / Carbo Inc</td>
+      <td >Seattle</td>
+      <td >10</td>
+      <td >10/20/2013</td>
+      <td  ><div style="display:none;">3</div>
+        Error A</td>
+      </tr>
+          <tr>
+      <td >0001111</td>
+      <td >23222 / Solo Wook</td>
+      <td >Chicago</td>
+      <td >20</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">1</div>
+        Error C</td>
+          </tr>
+    <tr >
+      <td >000112</td>
+      <td >14447 / Jawa Pal</td>
+      <td >New York</td>
+      <td >40</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div>
+        Error D</td>
+      </tr>
+    <tr>
+      <td >100200</td>
+      <td >75885 / Tusken Co</td>
+      <td >Nashville</td>
+      <td >30</td>
+      <td >10/20/2013</td>
+      <td ><div style="display:none;">2</div>
+        Error E</td>
+      </tr>
+       <tr>
+      <td >100200</td>
+      <td >75885 / Mando Inc</td>
+      <td >Nashville</td>
+      <td >20</td>
+      <td  >10/21/2013</td>
+      <td ><div style="display:none;">2</div>
+        Error F</td>
+       </tr>
+        
+        <tr>
+      <td >100100</td>
+      <td >75885 / Force Pros</td>
+      <td >Chicago</td>
+      <td  >20</td>
+      <td >10/22/2013</td>
+      <td ><div style="display:none;">1</div>
+        Error G</td>
+        </tr>
+    </tbody> 
+           </table>
+           </div>
+        </div>
+        
+         
+        
+         <div class="col-lg-6">
+          <h1>Open RFQ's</h1>
+          <div class="overflow all-exceptions" style="margin-bottom:35px;">
+           <table class="table table-striped tablesorter hoverable"  id="alle" style="padding-bottom:0 !important; margin-bottom:0 !important">
+       <thead >
+      <tr style="border-bottom:0px; !important">
+       <th style="border-bottom:0px; !important" data-sort="int" >RFQ # </th>
+       <th style="border-bottom:0px; !important" data-sort="int" >Item</th>
+        <th style="border-bottom:0px; !important" data-sort="string">Type</th>
+        <th style="border-bottom:0px; !important" data-sort="string">Vendor</th>
+        <th style="border-bottom:0px; !important" data-sort="string">Quote Deadline</th>
+        <th style="border-bottom:0px; !important" data-sort="string">Delivery</th>
+        </tr>
+    </thead>
+    <tbody style="border-top:#bcbcff 4px solid;"> 
+    <tr>
+      <td >3211111</td>
+      <td >2558</td>
+      <td >A</td>
+      <td >75885 / Force Pros</td>
+      <td >8/20/2013</td>
+      <td >10/20/2013</td>
+      </tr>
+    <tr >
+      <td >3211112</td>
+      <td >2559</td>
+      <td >X</td>
+      <td >75885 / Palp Prod</td>
+      <td >8/21/2013</td>
+      <td >10/21/2013</td>
+      </tr>
+    <tr>
+      <td >2121100</td>
+      <td >3126</td>
+      <td >B</td>
+      <td >75885 / Tusken Co</td>
+      <td >8/22/2013</td>
+      <td >10/22/2013</td>
+      </tr>
+      <tr>
+      <td >2121100</td>
+      <td >4565</td>
+      <td >Q</td>
+      <td >75885 / Alderan Bros</td>
+      <td >9/22/2013</td>
+      <td >10/22/2013</td>
+      </tr>
+      <tr>
+      <td >2121100</td>
+      <td >5648</td>
+      <td >Y</td>
+      <td >75885 / Force Pros</td>
+      <td >9/22/2013</td>
+      <td >10/22/2013</td>
+      </tr>
+      <tr>
+      <td >2121100</td>
+      <td >9864</td>
+      <td >C</td>
+      <td >75885 / Alderan Bros</td>
+      <td >9/22/2013</td>
+      <td >10/22/2013</td>
+      </tr>
+    </tbody> 
+           </table>
+           </div>
+        </div>
+<script>
+$('.dropdown-toggle').dropdown()
+
+$(".table-hide").hide()
+
+$(".pr-table-hide").hide()
+
+
+$(".pending-release").show()
+$(".pr-pending-release").show()
+
+
+$( ".tnooa" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  
+  $('#po-status').html('No Order Acknowledgement')
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".nooa").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		});
+});
+
+$( ".topenpastdue" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  $('#po-status').html('Open or Past Due')
+	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+	  $(".table-hide").promise().done(function(){
+	  $(".openpastdue").delay( 1200 ).fadeIn("slow")
+		  setTimeout(hideLoader, 1300)
+		});
+});
+
+$( ".tnoir" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  $('#po-status').html('No Invoice Receipt');
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".noir").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		});
+});
+
+$( ".tpending-release" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  $('#po-status').html('Pending Release');
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".pending-release").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		});
+});
+
+$( ".ters" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  $('#po-status').html('ERS Errors');
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".ers").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		});
+});
+
+
+$( ".tporesponse" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  $('#po-status').html('PO Responses');
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".poresponse").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		
+		});
+});
+
+
+$( ".toutputfailures" ).click(function( event ) {
+  $(".table-hide").fadeOut("slow");
+  $('#po-status').html('Output Failures');
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".outputfailures").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		
+		});
+});
+
+$( ".tpr-pending-release" ).click(function( event ) {
+  $(".pr-table-hide").fadeOut("slow");
+  $('#pr-status').html('Pending Release');
+  	$('#busy-pr').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".pr-table-hide").promise().done(function(){
+	    $(".pr-pending-release").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader2, 1300)
+		
+		});
+});
+
+
+$( ".tpropobatch" ).click(function( event ) {
+  $(".pr-table-hide").fadeOut("slow");
+  $('#pr-status').html('Batch Failures');
+  	$('#busy-pr').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".pr-table-hide").promise().done(function(){
+	    $(".propobatch").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader2, 1300)
+		
+		});
+});
+
+  function hideLoader(){
+	  $('#busy-po').activity(false);
+		  }
+function hideLoader2(){
+	  $('#busy-pr').activity(false);
+		  }
+
+$(function() {
+  // Setup drop down menu 
+  // Fix input element click problem
+  $('.dropdown-menu input, .dropdown-menu span').click(function(e) {
+    e.stopPropagation();
+  });
+});
+
+
+</script>  </div>
+  <!-- end .container --></div>
+  
+<script type="text/javascript" src="../assets/js/tablesort.js"></script>
+<script type="text/javascript" src="../assets/js/invista.js"></script>
+
+</body>
+</html>

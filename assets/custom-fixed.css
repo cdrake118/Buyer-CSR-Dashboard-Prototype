@@ -1,0 +1,21 @@
+/* Apply to render site frame fixed */
+.header{
+	position:fixed !important;
+}
+
+.breadcrumb{
+	position:fixed !important;
+}
+
+/*
+.sidebar1{
+	position: fixed !important;
+}
+
+.cnav{
+	position: fixed !important;
+}
+
+.togglemenu{
+	position: fixed !important;
+}

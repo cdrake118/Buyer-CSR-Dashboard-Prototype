@@ -1,0 +1,1301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Invista CSR Dashboard</title>
+<link href="assets/bootstrap.css" rel="stylesheet">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" href="assets/img/favicon.ico">
+<!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } 
+ul.nav a { zoom: 1; }  
+</style>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/stupidtable.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/flot/jquery.flot.min.js"></script>
+<script language="javascript" type="text/javascript" src="assets/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/waypoints-sticky.js"></script>
+<script type="text/javascript" src="assets/js/jquery.activity-indicator-1.0.0.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="http://clients.ubermind.com/invista/beta/assets/js/excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="assets/js/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="assets/flot/jquery.flot.resize.js"></script> 
+<script type="text/javascript" src="assets/toggle/toggles.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="assets/toggle/toggles.css"/>
+<link rel="stylesheet" type="text/css" href="assets/toggle/themes/toggles-soft.css"/>
+ <link rel="stylesheet" type="text/css" href="assets/custom.css"/>
+
+</head>
+
+<!-- Removes Outer Frame via CSS - No Longer Necessary-->
+<link rel="stylesheet" type="text/css" href="assets/no-frame.css"/>
+
+<body>
+<div class="container2">
+  <div class="content"> 
+ 
+  
+    <div class="col-lg-12 margin-set">
+      <form role="form">
+        <h1 class="filter-trigger">Filter Results <span id="toggle-glyph" class="glyphicon glyphicon-chevron-down" style="font-size:14px;"></span>
+          <button id="apply-filter" type="button" class="btn btn-success btn-xs" style="float:right;"> <span class="glyphicon glyphicon-export" ></span>&nbsp;&nbsp;<span class="condensed-bold">APPLY FILTER</span></button>
+        </h1>
+        <div class="mega-menu-content div-border-group">
+          <table class="table filter-table" width=100%>
+            <tr>
+              <td><div class="filter-group region-selection"> <span class="filter-title">Region</span><span class="filter-selections" id="region-selection">Select a Region</span>
+                  <div style="width:140px; overflow:hidden;">
+                    <input type="text" class="input-sm " placeholder="Search..." size="35" />
+                  </div>
+                  <div class="checkbox checklist region-clear">
+                    <div class="northamerica2">
+                      <input type="checkbox" id="northamerica" class="northamerica"/>
+                      <label class="northamerica" for="northamerica">N. America </label>
+                    </div>
+                    <div class="southamerica2">
+                      <input type="checkbox" id="southamerica"/>
+                      <label for="southamerica">S. America</label>
+                    </div>
+                    <input type="checkbox" id="europe"/>
+                    <label for="europe" class="europe">Europe</label>
+                    <input type="checkbox" id="asia"/>
+                    <label for="asia" class="asia">Asia</label>
+                    <input type="checkbox" id="africa"/>
+                    <label for="africa" class="africa">Africa</label>
+                    <input type="checkbox" id="southpacific"/>
+                    <label for="southpacific" class="southpacific">S. Pacific</label>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                  </div>
+                </div></td>
+              <td><div class="filter-group country-selection"> <span class="filter-title">Country</span><span class="filter-selections"  id="country-selection">Select a Country</span>
+                  <div style="width:140px; overflow:hidden;">
+                    <input type="text" class="input-sm " placeholder="Search..." size="35" />
+                  </div>
+                  <div class="checkbox country-clear">
+                    <input type="checkbox" id="united-states" class="united-states">
+                    <label class="united-states" for="united-states">United States</label>
+                    <input type="checkbox" id="mexico" class="mexico">
+                    <label class="mexico" for="mexico">Mexico</label>
+                    <input type="checkbox" id="brazil" class="brazil">
+                    <label class="brazil" for="brazil">Brazil</label>
+                  </div>
+                </div></td>
+              <td><div class="filter-group business-selection"> <span class="filter-title">Business</span><span class="filter-selections" id="business-selection">Select a Business Unit</span>
+                  <div style="width:140px; overflow:hidden;">
+                    <input type="text" class="input-sm " placeholder="Search..." size="35" />
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                    <input type="checkbox">
+                    <label>Unit A</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Unit B</label>
+                    </label>
+                    <label>
+                    <input type="checkbox" >
+                    <label>Unit C</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Unit D</label>
+                    </label>
+                  </div>
+                </div></td>
+              <td><div class="filter-group division-selection"> <span class="filter-title">Division</span><span class="filter-selections" id="division-selection">Select a Division</span>
+                  <div style="width:140px; overflow:hidden;">
+                    <input type="text" class="input-sm " placeholder="Search..." size="35" />
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                    <input type="checkbox" >
+                    <label>Divion A</label>
+                    </label>
+                    <label>
+                    <input type="checkbox" >
+                    <label>Division B</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Division C</label>
+                    </label>
+                    <label>
+                    <input type="checkbox" >
+                    <label>Division D</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Division E</label>
+                    </label>
+                  </div>
+                </div></td>
+              <td><div class="filter-group customer-selection"> <span class="filter-title">Customer</span><span class="filter-selections" id="customer-selection">Select a Customer</span>
+                  <div style="width:140px; overflow:hidden;">
+                    <input type="text" class="input-sm " placeholder="Search..." size="35" />
+                  </div>
+                  <div class="checkbox checklist">
+                    <label>
+                    <input type="checkbox">
+                    <label>Acme Inc</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Mothma Corp</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Solo Associates</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Ire Electronics</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Acme Inc</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Mothma Corp</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Solo Associates</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Ire Electronics</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Acme Inc</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Mothma Corp</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Solo Associates</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Ire Electronics</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Mothma Corp</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Solo Associates</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Ire Electronics</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Acme Inc</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Mothma Corp</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Solo Associates</label>
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    <label>Ire Electronics</label>
+                    </label>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                  </div>
+                </div></td>
+              <td><div class="filter-group"> <span class="filter-title">Variant</span><span class="filter-selections">No Variant Selected</span>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                      Variant one </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Variant two </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Variant three </label>
+                  </div>
+                  <button class="btn btn-default" type="button">Save as new variant</button>
+                </div></td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-3 margin-set">
+      <h1 >Exceptions
+        <button id="apply-filter" type="button" class="btn btn-success btn-xs view-all-exceptions" style="float:right;"> <span class="condensed-bold">ALL EXCEPTIONS</span></button>
+      </h1>
+      <div class="div-border-group" style="height:450px; padding-bottom:24px;">
+        <div id="placeholder" class="demo-placeholder" style="height:85%; width:90%; margin-top:10px; padding-top:0px; margin-left:14px;"></div>
+        <div class="label-stacked"></div><div class="label-horizontal"></div>
+      </div>
+    </div>
+    <style>
+	 select{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height:22px !important; width:110px !important; 
+  padding:0 !important;
+  margin:0 !important;
+}
+</style>
+    <div class="col-lg-9">
+      <h1 style="min-width:769px;"><span class="po-status2">All Exceptions</span><span id="busy-po" style="position:relative; margin-left:50px;"></span>
+        <form class="navbar-form" style="float:right; margin-top:-3px;" role="search" >
+          
+          <select class="form-control input-sm" style="">
+            <option>Mat #</option>
+            <option>Mat Name</option>
+            <option>Cust #</option>
+            <option>Cust Name</option>
+          </select>
+          <input type="text" class="form-control"  style="width:120px; height:14px !important;" placeholder="Filter criteria..."><div class="toggle-switch toggle-soft" style="float:right; margin-top:2px; margin-left:20px;"></div>
+       </form>
+      </h1>
+      <div class="my-exceptions" style="margin-bottom:35px; margin-top:0px !important; padding-top:0px;">
+        <style>
+	
+	 
+	 .btn-group.open .dropdown-toggle{
+		 webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.0);
+			box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.0);
+	 }
+	 
+	
+	  </style>
+        <table class="table table-striped invista-items tablesorter sortable tableContainer hoverable table-hide exception1 addLineItems" id="mye" style="padding-bottom:0 !important; margin-bottom:0 !important; ">
+          <thead class="fixedHeader">
+            <tr>
+              <th data-sort="int" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> ! &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="int" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Order &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Exception <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> PO # &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Sold to &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Doc # &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Del &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Resp &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+            </tr>
+          </thead>
+          <tbody class="scrollContent" id="dashboard-exception-view">
+            <tr onclick="onb=83920">
+              <td  class="high">3</td>
+              <td >83920</td>
+              <td>Shipped Not-Billed</td>
+              <td   >2343234</td>
+              <td  >Company A</td>
+              <td  >143</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr  onclick="onb=129281" id="popover8" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="&lt;strong&gt;Delivery Exception: Missing Shipment&lt;/strong&gt;" data-content="&lt;p&gt;Item 10:  Not Confirmed&lt;/p&gt; &lt;p&gt; Item 10: Blocked&lt;/p&gt;&lt;div style='width:400px;'&gt;&lt;/div&gt;">
+              <td  class="medium">2</td>
+              <td >129281</td>
+              <td  >Multiple Exceptions</td>
+              <td  >2343234</td>
+              <td >Company A</td>
+              <td  >3432123</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr onclick="onb=6439282">
+              <td  class="medium">2</td>
+              <td  >649282</td>
+              <td  >Missing Items</td>
+              <td   >2343234</td>
+              <td  >Company A</td>
+              <td  >C43212</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr onclick="onb=839283">
+              <td  class="low">1</td>
+              <td  >839283</td>
+              <td  >Missing Items</td>
+              <td  >2343234</td>
+              <td >Company B</td>
+              <td  >9893</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr  onclick="onb=249281">
+              <td  class="low">1</td>
+              <td >249281</td>
+              <td  >Missing Items</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=739282" id="popover9" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-container="body" data-original-title="<strong>No Order Level Exceptions</strong>" data-content="<p>Item 30:  Not Confirmed</p><p>Item 10: Blocked</p><div style='width:400px;'></div>">
+              <td  class="low">1</td>
+              <td  >739282</td>
+              <td  >Item Exception</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  >Not Confirmed</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284" >
+              <td  class="low">1</td>
+              <td >839284</td>
+              <td  >Not Confirmed</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td>Missing Shipment</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=119284">
+              <td  class="low">1</td>
+              <td  >119284</td>
+              <td>Missing Shipment</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr  onclick="onb=839284">
+              <td  class="low">1</td>
+              <td>839284</td>
+              <td>Missing Shipment</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td>Blocked</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=229284">
+              <td  class="low">1</td>
+              <td   >229284</td>
+              <td>Blocked</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td>Blocked</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+            <tr onclick="onb=0000839284">
+              <td  class="low">1</td>
+              <td  >0000839284</td>
+              <td>Blocked</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  >Incomplete</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+            <tr onclick="onb=559284">
+              <td  class="low">1</td>
+              <td  >559284</td>
+              <td  >Incomplete</td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-striped invista-items tablesorter sortable tableContainer hoverable table-hide exception2 addLineItems addLineItems2" id="mye" style="padding-bottom:0 !important; margin-bottom:0 !important; ">
+          <thead class="fixedHeader">
+            <tr>
+              <th data-sort="int" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> ! &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="int" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Order &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Exception <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> PO # &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Sold to &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Doc # &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Del &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+              <th data-sort="string" style="" ><div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"> Resp &nbsp; <span class="caret"></span> </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Sort Ascending</a></li>
+                    <li><a href="javascript:void(0);">Sort Descenging</a></li>
+                    <li><a href="javascript:void(0);"style="overflow:hidden;">
+                      <input type="text" class="input-xs " placeholder="Filter..." size="20" style="width:120px !important" />
+                      </a></li>
+                  </ul>
+                </div></th>
+            </tr>
+          </thead>
+          <tbody class="scrollContent" id="dashboard-exception-view">
+            <tr onclick="onb=8392010">
+              <td  class="high">3</td>
+              <td >8392010</td>
+              <td><span class="po-status2"></span></td>
+              <td   >2343234</td>
+              <td  >Company A</td>
+              <td  >143</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr  onclick="onb=129281" id="popover8" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="&lt;strong&gt;Delivery Exception: Missing Shipment&lt;/strong&gt;" data-content="&lt;p&gt;Item 10:  Not Confirmed&lt;/p&gt; &lt;p&gt; Item 10: Blocked&lt;/p&gt;&lt;div style='width:400px;'&gt;&lt;/div&gt;">
+              <td  class="medium">2</td>
+              <td >129281</td>
+              <td  ><span class="po-status2"></span></td>
+              <td  >2343234</td>
+              <td >Company A</td>
+              <td  >3432123</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr onclick="onb=6439282">
+              <td  class="medium">2</td>
+              <td  >649282</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >2343234</td>
+              <td  >Company A</td>
+              <td  >C43212</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr onclick="onb=839283">
+              <td  class="low">1</td>
+              <td  >839283</td>
+              <td  ><span class="po-status2"></span></td>
+              <td  >2343234</td>
+              <td >Company B</td>
+              <td  >9893</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+            <tr  onclick="onb=249281">
+              <td  class="low">1</td>
+              <td >249281</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party A</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=739282" id="popover9" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-container="body" data-original-title="<strong>No Order Level Exceptions</strong>" data-content="<p>Item 30:  Not Confirmed</p><p>Item 10: Blocked</p><div style='width:400px;'></div>">
+              <td  class="low">1</td>
+              <td  >739282</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284" >
+              <td  class="low">1</td>
+              <td >839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=119284">
+              <td  class="low">1</td>
+              <td  >119284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr  onclick="onb=839284">
+              <td  class="low">1</td>
+              <td>839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=229284">
+              <td  class="low">1</td>
+              <td   >229284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+              </tr>
+            
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+            <tr onclick="onb=839284">
+              <td  class="low">1</td>
+              <td  >839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+            <tr onclick="onb=0000839284">
+              <td  class="low">1</td>
+              <td  >0000839284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+            <tr onclick="onb=559284">
+              <td  class="low">1</td>
+              <td  >559284</td>
+              <td  ><span class="po-status2"></span></td>
+              <td   >23432343</td>
+              <td  >Company C</td>
+              <td  >93827</td>
+              <td   >10/20/2013</td>
+              <td   >Party B</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-12" style="clear:both; height:68px; margin-left:0 !important; margin-right:0 !important; width:100% !important; padding-right:0px; padding-left:0px;">
+      <h1 id="full-round" style="" class="order-tracker">
+        <div style="padding-top:0px; width:400px; float:left;"><span style="padding-left:15px;">Order Tracker: </span><span class="orderno">Select an order above</span></div>
+        <form class="navbar-form" style="float:right; margin-right:18px;" role="search" >
+          <div class="">
+            <input type="text" class="form-control"  style="margin-top:-15px; position:relative; display:inline; width:120px; height:14px; font-size:12px;" placeholder="Search by Order #...">
+            <button style="margin-top:-15px; margin-left:0px; display:inline; position:relative; " type="submit" class="btn btn-xs btn-success"><span class="condensed-bold">SUBMIT</span></button>
+            <button style="margin-top:-15px; margin-left:0px; display:inline; position:relative; " type="submit" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-th-large" ></span>&nbsp;&nbsp;<span class="condensed-bold">SAVE VIEW</span></button>
+          </div>
+        </form>
+        <div class="key-metrics3" style="min-width:933px">
+          <div class="order-details-hideshow">
+            <table style="min-width:933px">
+              <tr>
+                <td ><div  style="margin-left:auto !important; margin-right:auto !important; width:110px;"><img src="assets/img/emailteam.png" alt="Email Team" style="padding-top:2px" /><span>Email<br/>
+                    Team</span></div></td>
+                <td ><div style="margin-left:auto !important; margin-right:auto !important; width:110px;"><img src="assets/img/emailcustomer.png"  alt="Email Customer" /><span>Email<br/>
+                    Customer</span></div></td>
+                <td ><div style="margin-left:auto !important; margin-right:auto !important; width:110px;"><img src="assets/img/displaycustomer.png"  alt="Display Order" /><span>Display<br/>
+                    Order</span></div></td>
+                <td ><div style="margin-left:auto !important; margin-right:auto !important; width:110px;"><img src="assets/img/changeorder.png"  alt="Change Order" /><span>Change<br/>
+                    Order</span></div></td>
+                <td ><div style="margin-left:auto !important; margin-right:auto !important; width:110px;"><img src="assets/img/materialavailability.png"  alt="Material Availability" /><span>Material<br/>
+                    Availability</span></div></td>
+                <td ><div style="margin-left:auto !important; margin-right:auto !important; width:120px;"><img src="assets/img/viewinventory.png" style="padding-top:3px" alt="View Inventory" /><span>View<br/>
+                    Inventory</span></div></td>
+                <td ><div style="margin-left:auto !important; margin-right:auto !important; width:110px;"><img src="assets/img/customerlist.png"  alt="Customer Product List" /><span>Customer<br/>
+                    Products</span></div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </h1>
+    </div>
+    <div class="order-details-hideshow">
+      <div class="col-lg-12 margin-set" style="clear:both;">
+        <div class="key-metrics2" style="margin-top:24px;"> </div>
+      </div>
+    </div>
+    <div class="order-details-hideshow">
+      <div class="col-lg-6">
+        <h1>Customer</h1>
+        <table class="table-striped table order-details-height order-no-table" >
+          <tr>
+            <td style="margin-left:0px; padding-left:0px;"><div> <strong>Invista</strong><br/>
+                12345 Main St. #103<br/>
+                Anytown, ST 30283<br />
+                USA<br />
+                <br />
+                <strong>P.O.</strong> # 00000000 </div></td>
+            <td><div ><strong>INVISTA Resins &amp; Fibers GmbH</strong><br/>
+                Phillipp-Reis-Strasse 2<br/>
+                65795 Hattersheim am Main<br />
+                Deutschland </div></td>
+          </tr>
+        </table>
+      </div>
+      <style>
+		 .show-tooltip{
+			 height:140px;
+			 
+		 }
+		 th{
+	  white-space:normal !important;
+	  text-align:left;
+  } 
+		 </style>
+      <div class="col-lg-6" style="margin-bottom:20px;">
+        <div>
+          <h1>Current Status<span class="busy-items" style="position:relative; margin-left:50px;"></span></h1>
+          <div class="item-status-header">
+            <p style="padding-top:5px;">Status for Item</p>
+          </div>
+          <table class="table  table-striped current-status">
+            <tr >
+              <td><div class=""  id="popover" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Confirmed" data-content="Confirmed 10/19/2013"> <img src="assets/img/confirmed.png" width="82" height="82" alt="Confirmed" class="opaque2" /></div></td>
+              <td ><div class=""  id="popover2" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Delivery Created" data-content="Created 10/20/2013"><img class="opaque2 "src="assets/img/created.png" width="82" height="82" alt="Created" /></div></td>
+              <td ><div class=""  id="popover3" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Picked" data-content="Picked on 10/20/2013"><img class="opaque2" src="assets/img/picked.png" width="82" height="82" alt="Picked" /></div></td>
+              <td ><div class=""  id="popover4" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Warehouse Process" data-content="Processed on 10/21/2013"><img class="opaque2" src="assets/img/process.png" width="82" height="82" alt="Process" /></div></td>
+              <td ><div class=""  id="popover5" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Not shipped" data-content="Waiting to be shipped"><img class="opaque2 shipped-ico" src="assets/img/shipped.png" width="82" height="82" alt="Shipped" /></div></td>
+              <td ><div class=""  id="popover6" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Not In Transit" data-content="Not in transit"><img class="opaque2 intransit" src="assets/img/intransit.png" width="82" height="82" alt="In Transit" /></div></td>
+              <td ><div class=""  id="popover7" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="bottom" data-original-title="Not Delivered" data-content="Not Delivered"><img class="opaque" src="assets/img/delivered.png" width="82" height="82" alt="Delivered" /></div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+      <div class="col-lg-6">
+        <h1>Items
+          <button id="apply-variant" type="button" class="btn btn-success btn-xs" style="float:right;"> <span class="glyphicon glyphicon-th-large" ></span>&nbsp;&nbsp;<span class="condensed-bold">VARIANTS</span></button>
+          <button type="button" class="btn btn-success btn-xs" style="float:right; margin-right:10px;" id="chart1"> <span class="condensed-bold" ID="toggleFilter3" >VIEW EXCEPTIONS ONLY</span></button>
+        </h1>
+        <div class="overflow my-exceptions" style="margin-bottom:35px; min-height:265px;">
+          <table class="table table-striped tablesorter hoverable items-table "  id="alle" style="padding-bottom:0 !important; margin-bottom:0 !important">
+            <thead>
+              <tr>
+                <th width="4%"  style="" data-sort="int">Item #</th>
+                <th width="6%"  style="" data-sort="int">Material #</th>
+                <th width="7%"  style="" data-sort="string">Cust Mat #</th>
+                <th width="7%"  style="" data-sort="string">Qty</th>
+                <th width="8%"  style="" data-sort="string">Status</th>
+              </tr>
+            </thead>
+            <tbody style="max-height:550px">
+              <tr class="no-exception" style="" onclick="a=10">
+                <td><span class="item-description">10</span></td>
+                <td class="item-description"><strong>2132151</strong><br />
+                  TERATHANE<br />
+                  Avail: 10/10/2013</td>
+                <td>568464</td>
+                <td>1000/1000</td>
+                <td>Confirmed</td>
+              </tr>
+              <tr class="no-exception" onclick="a=20">
+                <td><span class="item-description">20</span></td>
+                <td class="item-description"><strong>2132151</strong><br />
+                  TERATHANE<br />
+                  Avail: 10/10/2013</td>
+                <td >568464</td>
+                <td >1500/1500</td>
+                <td>Confirmed</td>
+              </tr>
+              <tr onclick="a=30" class=" item-exception has-exception">
+                <td><span class="item-description">30</span></td>
+                <td><strong>2132151</strong><br />
+                  TERATHANE<br />
+                  Avail: 10/10/2013</td>
+                <td >465465</td>
+                <td>2500/2500</td>
+                <td><span class="exception-text">Not Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>Deliveries<span class="busy-items" style="position:relative; margin-left:50px;"></span>
+          <button id="apply-variant" type="button" class="btn btn-success btn-xs" style="float:right;"> <span class="glyphicon glyphicon-th-large" ></span>&nbsp;&nbsp;<span class="condensed-bold">VARIANTS</span></button>
+        </h1>
+        <div class="overflow all-exceptions" style="margin-bottom:35px;">
+          <div class="deliveries-status-header">
+            <p style="padding-top:5px;">Select an item to view its deliveries</p>
+          </div>
+          <table class="table table-striped tablesorter deliveries-table "  id="dele" style="padding-bottom:0 !important; margin-bottom:0 !important">
+            <thead>
+              <tr >
+                <th data-sort="int" >Delivery # </th>
+                <th data-sort="string">Dates</th>
+                <th data-sort="string">Plant</th>
+                <th data-sort="string">Item(s)</th>
+                <th data-sort="string">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="">003920392</td>
+                <td class="">Req:10/20/2013<br />
+                  Con: 10/19/2013<br />
+                  Act: 10/19/2013</td>
+                <td class="">Angleton</td>
+                <td class="deliveries-items">10, 20</td>
+                <td class="">Picking Complete</td>
+              </tr>
+              <tr>
+                <td class="">003488493</td>
+                <td class="">Req:10/20/13<br />
+                  Con: 10/19/2013<br />
+                  Act: 10/28/13</td>
+                <td class="">Angleton</td>
+                <td class="deliveries-items">20</td>
+                <td class="">Picking Complete</td>
+              </tr>
+              <tr>
+                <td class="">002214215</td>
+                <td class="">Req:10/27/13<br />
+                  Con: 10/27/13<br />
+                  Act: 10/28/13</td>
+                <td class="">Angleton</td>
+                <td class="deliveries-items">20, 30</td>
+                <td class="">Picking Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-12 margin-set" style="clear:both; min-width:1080px;">
+        <h1>Shipments<span class="busy-items" style="position:relative; margin-left:50px;"></span>
+          <button id="apply-variant" type="button" class="btn btn-success btn-xs" style="float:right;"> <span class="glyphicon glyphicon-th-large" ></span>&nbsp;&nbsp;<span class="condensed-bold">VARIANTS</span></button>
+        </h1>
+        <div class="overflow all-exceptions" style="margin-bottom:35px;">
+          <div class="shipments-status-header">
+            <p style="padding-top:5px;">Select an item to view its shipments</p>
+          </div>
+          <div style="min-height:205px;">
+          <table class="table table-striped tablesorter shipments-table "  id="shipe" style="padding-bottom:0 !important; margin-bottom:0 !important">
+            <thead>
+              <tr >
+                <th data-sort="int" >Shipment # </th>
+                <th data-sort="string">Shipping Point</th>
+                <th data-sort="int">Delivery #</th>
+                <th data-sort="string">Load Begin</th>
+                <th data-sort="string" >Load End </th>
+                <th data-sort="string">Departure</th>
+                <th data-sort="string">PoP</th>
+                <th data-sort="string">At Destination</th>
+                <th data-sort="string" >Unload Begin</th>
+                <th data-sort="string">Unload End</th>
+                <th data-sort="string">PoD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="">00031111</td>
+                <td class="">Beaumont</td>
+                <td class="">003920392</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+              </tr>
+              <tr class="has-exception shipment-exception">
+                <td class="">0003211</td>
+                <td class="">Beaumont</td>
+                <td class="">003488493</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+              </tr>
+              <tr>
+                <td class="">0003212</td>
+                <td class="">Beaumont</td>
+                <td class="">002214215</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act: 10/19/13</td>
+                <td class="">Plan: 10/20/13<br/>
+                  Act:10/19/13</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+	
+	$( "#apply-filter" ).hide();
+	$("#search-filter").hide();
+	
+	var y=1;
+	 $(".mega-menu-content").animate({height:57},0);
+  $(".filter-trigger").click(function(){},
+  function(){
+	
+if (y==1){
+    $(".mega-menu-content").animate({height:200},200);
+	$( "#apply-filter" ).show();
+		$("#search-filter").show();
+
+	
+	}
+	
+else if(y==-1){
+	$(".mega-menu-content").animate({height:57},200);
+	$( "#apply-filter" ).hide();
+		$("#search-filter").hide();
+
+	}
+	y*=-1;
+  });
+
+	
+	// exception filter results
+	var z=1;
+	 $(".exception-menu-content").animate({height:0},0);
+ 
+  $(".search-exceptions").click(function(){},
+
+  function(){
+	
+if (z==1){
+    $(".exception-menu-content").animate({height:200},200);
+	//$( "#apply-filter" ).show();
+	//	$("#search-filter").show();
+
+	
+	}
+	
+else if(z==-1){
+	$(".exception-menu-content").animate({height:0},200);
+	//$( "#apply-filter" ).hide();
+	//	$("#search-filter").hide();
+
+	}
+	z*=-1;
+  });
+	
+
+	
+$( ".filter-trigger" ).click(function() {
+  $('#toggle-glyph').toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
+});
+
+	
+	
+	
+	    $('#popover').popover('hide')
+		$('#popover2').popover('hide')
+		$('#popover3').popover('hide')
+        $('#popover4').popover('hide')
+		$('#popover5').popover('hide')
+		$('#popover6').popover('hide')
+		$('#popover7').popover('hide')
+		    
+	//	$('#popover8').popover('hide')
+	//	$('#popover9').popover('hide')
+		  
+		// Show Order Details
+		
+		// Set Default state to be hidden
+		$(".order-details-hideshow").hide();
+		
+		$(".table-hide").hide()
+
+	$(".exception1").show()
+
+		
+		
+	function changeException(){
+		//alert("HI!");
+  $(".table-hide").fadeOut("fast");
+  	$('.po-status2').html(window.newLabelName);
+
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".exception2").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		
+		});
+};
+
+	
+	$( ".view-all-exceptions" ).click(function( event ) {
+  $(".table-hide").fadeOut("fast");
+  $('.po-status2').html('All Exceptions');
+  	$('#busy-po').activity({segments: 8, steps: 3, opacity: 0.3, width: 4, space: 0, length: 4, speed: 1.5, align: 'right'});
+
+	  $(".table-hide").promise().done(function(){
+	    $(".exception1").delay( 1200 ).fadeIn("slow")
+		setTimeout(hideLoader, 1300)
+		
+		});
+});
+	
+	
+	
+	
+	
+  function hideLoader(){
+	  $('#busy-po').activity(false);
+		  }	
+		  
+		   function hideLoaderItems(){
+	  $('.busy-items').activity(false);
+		  }	
+		
+
+
+$(function() {
+  // Setup drop down menu
+  $('.dropdown-toggle').dropdown();
+ 
+  // Fix input element click problem
+  $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
+    e.stopPropagation();
+  });
+});
+
+$('.toggle-switch').toggles({text:{on:'LINE ITEMS',off:'ORDERS' }, width: 90, height: 22});
+
+
+$('.toggle-switch').on('toggle', function (e, active) {
+    if (active) {
+$('.addLineItems').find('tr').each(function(){
+		var number = "00" + (100 + Math.floor(Math.random() * 599))
+        $(this).find('td').eq(1).after('<td class="removeLineItem">'+ number + '</td>');
+		
+    });
+	
+	 $('.addLineItems').find('tr').each(function(){
+        $(this).find('th').eq(1).after("<th class='removeLineItem'><div class='btn-group'><a class='btn dropdown-toggle' data-toggle='dropdown' href='#' style='text-decoration:none;'>L #&nbsp;&nbsp;<span class='caret'></span></a><ul class='dropdown-menu'><li><a href='javascript:void(0);'>Sort Ascending</a></li><li><a href='javascript:void(0);'>Sort Descenging</a></li><li><a href='javascript:void(0);'style='overflow:hidden;'><input type='text' class='input-xs ' placeholder='Filter...' size='20' style='width:120px !important' /></a></li></ul></div></th> ");
+		
+    });
+    } else {
+
+
+        $('.removeLineItem').css('display', 'none');
+
+    }
+});
+
+	
+
+</script> 
+</div>
+<!-- end .container -->
+</div>
+<script type="text/javascript" src="assets/js/tablesort.js"></script> 
+<script type="text/javascript" src="assets/js/invista.js"></script>
+<script>
+$(document).ready(function() {
+		
+		
+	$('.order-tracker').waypoint('sticky',
+	{
+	// wrapper: '<div class="sticky-wrapper" />',
+  stuckClass: 'stuck'
+	
+});
+
+});</script>
+</body>
+</html>
